@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=ru.mobiledimension.lib.mainannotation.config.Config
