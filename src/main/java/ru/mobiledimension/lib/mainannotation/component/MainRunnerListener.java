@@ -33,7 +33,7 @@ public class MainRunnerListener {
             if (beanClassName == null)
                 continue;
 
-            Class<?> beanClass = ClassUtils.resolveClassName(beanClassName, ClassLoader.getSystemClassLoader());
+            Class<?> beanClass = ClassUtils.resolveClassName(beanClassName,null);
             Method[] methods = beanClass.getMethods();
             for (Method method : methods) {
                 if (method.isAnnotationPresent(Main.class)) {
